@@ -9,3 +9,10 @@ on html::
 on typescript::
 
     this.router.navigate(['/exammanagement/studentexams/start/', exam.id]);
+
+you can set `active` class to navbar in Angular2::
+
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/studentexams/']">Finished Exams</a></li>
+      <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/upcomingexams/']">Upcoming Exams</a></li>
+    </ul>
