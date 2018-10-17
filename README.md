@@ -16,3 +16,8 @@ you can set `active` class to navbar in Angular2::
       <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/studentexams/']">Finished Exams</a></li>
       <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/upcomingexams/']">Upcoming Exams</a></li>
     </ul>
+
+## check an item in array:
+
+    <div *ngIf="widgets.indexOf('profile') != -1">
+    </div>
