@@ -21,3 +21,23 @@ you can set `active` class to navbar in Angular2::
 
     <div *ngIf="widgets.indexOf('profile') != -1">
     </div>
+
+## Loop
+
+**loop an array:**
+
+    let list = [4, 5, 6];
+
+    for (let i in list) {
+       console.log(i); // "0", "1", "2",
+    }
+
+    for (let i of list) {
+       console.log(i); // "4", "5", "6"
+    }
+    
+**loop an object:**
+
+    for (const key of Object.keys(filters)) {
+        filters[key] = 'some'
+    }
