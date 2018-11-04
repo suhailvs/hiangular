@@ -16,7 +16,14 @@ you can set `active` class to navbar in Angular2::
       <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/studentexams/']">Finished Exams</a></li>
       <li [routerLinkActive]="['active']"> <a [routerLink]="['/exammanagement/upcomingexams/']">Upcoming Exams</a></li>
     </ul>
+    
+Query Params(pass params in GET)::
 
+    this.router.navigate(['/dashboard/roles/'], {queryParams: { subsubmenu_id: this.subsubmenu_id }});
+
+recive the Query params
+
+    this.subsubmenu_id = this.route.snapshot.queryParamMap.get('subsubmenu_id');
 ## check an item in array:
 
     <div *ngIf="widgets.indexOf('profile') != -1">
