@@ -48,3 +48,12 @@ recive the Query params
     for (const key of Object.keys(filters)) {
         filters[key] = 'some'
     }
+
+## NgClass
+
+    [ngClass]="'first second'"
+    [ngClass]="['first', 'second']"
+    [ngClass]="{'first': true, 'second': true, 'third': false}"
+    [ngClass]="stringExp|arrayExp|objExp"
+    [ngClass]="{'class1 class2 class3' : true}"
+    [ngClass]="(step=='step1')?'class1':'class2'"
