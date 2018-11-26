@@ -49,6 +49,12 @@ recive the Query params
         filters[key] = 'some'
     }
 
+angular way:
+
+    <div *ngFor="let item of filters | keyvalue">
+      {{item.key}}:{{item.value}}
+    </div>
+    
 ## NgClass
 
     [ngClass]="'first second'"
