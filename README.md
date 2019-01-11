@@ -63,3 +63,8 @@ angular way:
     [ngClass]="stringExp|arrayExp|objExp"
     [ngClass]="{'class1 class2 class3' : true}"
     [ngClass]="(step=='step1')?'class1':'class2'"
+
+## ifelse
+
+    <div *ngIf="show; else elseBlock">Text to show</div>
+    <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
