@@ -68,3 +68,7 @@ angular way:
 
     <div *ngIf="show; else elseBlock">Text to show</div>
     <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+
+## style in component
+
+    styles: ['h1 { font-weight: normal; }']
