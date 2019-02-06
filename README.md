@@ -72,6 +72,7 @@ angular way:
 ## style in component
 
     styles: ['h1 { font-weight: normal; }']
+    styleUrls: ['./login.component.css']
     
 ## HttpClient.get with params
     this.httpClient.get('/dashboard/rolewidgets/?roleid=' + roleid);
