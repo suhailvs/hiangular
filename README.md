@@ -69,10 +69,11 @@ angular way:
     <div *ngIf="show; else elseBlock">Text to show</div>
     <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
 
-## style in component
+## style/template in component
 
     styles: ['h1 { font-weight: normal; }']
     styleUrls: ['./login.component.css']
+    templateUrl: './login.component.html',
     
 ## HttpClient.get with params
     this.httpClient.get('/dashboard/rolewidgets/?roleid=' + roleid);
