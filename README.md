@@ -76,3 +76,4 @@ angular way:
     
 ## HttpClient.get with params
     this.httpClient.get('/dashboard/rolewidgets/?roleid=' + roleid);
+    this.httpClient.get('/academics/get_class_subjects/', { params: { 'classes': classes, 'teacher': teacher } });
